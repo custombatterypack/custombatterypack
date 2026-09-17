@@ -158,7 +158,9 @@
             <select id="cellType" onchange="toggleCustomInputs()">
                 <option value="18650">18650 (18×65mm)</option>
                 <option value="21700">21700 (21×70mm)</option>
-                <option value="26650">26650 (26×65mm)</option>
+                <option value="26650">26650 (26×50mm)</option>
+                <option value="32700">32700 (32×70mm)</option>
+                <option value="32140">32140 (32×140mm)</option>
                 <option value="lfp_prismatic">LFP Prismatic Block</option>
                 <option value="custom">Custom Dimensions</option>
             </select>
@@ -269,6 +271,8 @@
             '18650': { r: 9, h: 65, type: 'cylinder' },
             '21700': { r: 10.5, h: 70, type: 'cylinder' },
             '26650': { r: 13, h: 65, type: 'cylinder' },
+            '32700': { r: 13, h: 70, type: 'cylinder' },
+            '32140': { r: 13, h: 140, type: 'cylinder' },
             'lfp_prismatic': { w: 50, h: 100, d: 30, type: 'box' }
         };
 
